@@ -13,15 +13,22 @@
 <body>
     <div class="div__frame" id="div__background" onclick="changeBackground_1()">
         <h1>Привет, я калькулятор !</h1>
-        <p class="text__style">Введите первое число: <input type="text" id="number1"></p>
-        <p class="text__style">Введите второе число: <input type="text" id="number2"></p>
-
-        <button type="button" class="button__style" onclick="plus()">+</button>
-        <button type="button" class="button__style" onclick="minus()">-</button>
-        <button type="button" class="button__style" onclick="divide()">/</button>
-        <button type="button" class="button__style" onclick="multiply()">*</button>
+        <div class="div__frame">
+            <label class="text__style">Введите первое число:</label> 
+            <input type="number" id="number1">
+        </div>
+        <div class="div__frame">
+            <label class="text__style">Введите второе число:</label>
+            <input type="number" id="number2">
+        </div>
+        <div class="div__frame">
+            <button type="button" class="button__style" onclick="plus()">+</button>
+            <button type="button" class="button__style" onclick="minus()">-</button>
+            <button type="button" class="button__style" onclick="divide()">/</button>
+            <button type="button" class="button__style" onclick="multiply()">*</button>
+        </div>
         
-        <p class="text__style">Результат выполнения операции:</p>
+        <label class="text__style">Результат выполнения операции:</label>
         <div class="text__style div__frame" id="result" onclick="changeBackground_2()">Тут будет число! Нажми на кнопку вычисления выше!</div>
     </div>
     
